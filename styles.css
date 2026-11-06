@@ -1,0 +1,65 @@
+:root {
+  color-scheme: light;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13.5px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  color: #111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 280px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.page {
+  display: grid;
+  min-height: 100vh;
+  min-height: 100svh;
+  place-items: center;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.poem {
+  width: min(100%, 620px);
+}
+
+.poem h1,
+.poem p {
+  margin: 0;
+  font: inherit;
+  line-height: 1.65;
+}
+
+.poem h1 {
+  margin-bottom: 0.3em;
+  font-family: "Times Modern", "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.poem p {
+  margin-top: 0.9em;
+}
+
+@media (max-width: 420px) {
+  .page {
+    padding-inline: 12px;
+  }
+}
